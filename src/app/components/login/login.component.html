@@ -1,3 +1,4 @@
+<div class="midd">
 <div class="form-container mat-elevation-z5">
   <h1>Login</h1>
   <form [formGroup]="loginForm" (ngSubmit)="submit()">
@@ -22,3 +23,15 @@
     <span class="center margin-top">New to our platform? <a class="sign-up-link" routerLink="/sign-up">Sign up!</a></span>
   </form>
 </div>
+</div>
+
+<style>
+  .midd{
+    height: 87vh;
+    width: 99bvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+</style>

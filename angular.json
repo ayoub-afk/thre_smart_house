@@ -27,7 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -95,7 +95,7 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -107,8 +107,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "angular-sign-up:build:production",
-            "firebaseProject": "angular-sign-up",
-            "firebaseHostingSite": "angular-sign-up"
+            "firebaseProject": "firestoretest-9bfee",
+            "firebaseHostingSite": "firestoretest-9bfee"
           }
         }
       }

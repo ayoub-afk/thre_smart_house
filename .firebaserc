@@ -6,9 +6,16 @@
           "angular-sign-up"
         ]
       }
+    },
+    "firestoretest-9bfee": {
+      "hosting": {
+        "angular-sign-up": [
+          "firestoretest-9bfee"
+        ]
+      }
     }
   },
   "projects": {
-    "default": "angular-sign-up"
+    "default": "firestoretest-9bfee"
   }
 }

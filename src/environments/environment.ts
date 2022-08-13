@@ -4,12 +4,13 @@
 
 export const environment = {
   firebase: {
-    apiKey: 'AIzaSyChyrQOvph3mZt6Sqi2ErZD5FknLvi7n40',
-    authDomain: 'angular-sign-up-719ed.firebaseapp.com',
-    projectId: 'angular-sign-up-719ed',
-    storageBucket: 'angular-sign-up-719ed.appspot.com',
-    messagingSenderId: '378550273300',
-    appId: '1:378550273300:web:494c048877b2fdaaf62e01',
+    projectId: 'firestoretest-9bfee',
+    appId: '1:630619860814:web:a5bc40620aa435a357f81f',
+    storageBucket: 'firestoretest-9bfee.appspot.com',
+    locationId: 'europe-west',
+    apiKey: 'AIzaSyCCZrIDSZcyiHfcCZyEKvfHFlfRlclg_Rk',
+    authDomain: 'firestoretest-9bfee.firebaseapp.com',
+    messagingSenderId: '630619860814',
   },
   production: false,
 };

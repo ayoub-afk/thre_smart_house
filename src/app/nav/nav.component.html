@@ -1,0 +1,66 @@
+<style>
+  .contii{
+    height: 5vh;
+    width: 8rem;
+    background-color:white;}
+</style>
+
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">FAR [hello]</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav navlist">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  routerLink="/main-home">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pricing">PRICING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <div class="contii">
+            <ng-container *ngIf="user$ | async as user; else loginButton">
+              <button mat-button [matMenuTriggerFor]="userMenu">
+                <img
+                  width="30"
+                  height="30"
+                  class="profile-image-toolbar"
+                  [src]="user.photoURL ?? 'assets/images/image-placeholder.png'"
+                />
+                {{ user.displayName }}
+                <mat-icon>expand_more</mat-icon>
+              </button>
+            </ng-container>
+            <ng-template #loginButton>
+              <button mat-button routerLink="login">
+                <mat-icon>login</mat-icon>
+                Login
+              </button>
+            </ng-template>
+          <mat-menu #userMenu="matMenu">
+            <button mat-menu-item routerLink="/profile">
+              <mat-icon>account_circle</mat-icon>
+              Profile
+            </button>
+            <button mat-menu-item routerLink="/dashboard">
+              <mat-icon>account_circle</mat-icon>
+
+              dashboard
+            </button>
+            <button mat-menu-item (click)="logout()">
+              <mat-icon>logout</mat-icon>
+              Logout
+            </button>
+          </mat-menu>
+          </div>
+        </li>
+      </ul>
+  </div>

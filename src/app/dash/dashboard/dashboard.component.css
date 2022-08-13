@@ -1,0 +1,19 @@
+.cont{
+  display: flex;
+  justify-content: center;
+
+}
+.navv{
+  background-color: #C0CDD9!important;
+}
+.kask{
+  background-color: aliceblue;
+  color:black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+  /* .drrr{
+    display: flex;
+    justify-content: center;
+  }
+ */

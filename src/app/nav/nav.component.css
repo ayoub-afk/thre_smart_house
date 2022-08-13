@@ -1,0 +1,22 @@
+.navbar-brand{
+  font-size: 40px;
+  margin-left: 10vw;
+  color: white;
+
+}
+.navbar{
+  height:13vh!important;
+}
+.navbar ul li a{
+  color: white;
+}
+nav {
+  background-color:#001D3D;
+}
+.nav-item {
+  padding: 25px;
+}
+
+.navlist {
+   margin-left: 400px;
+}

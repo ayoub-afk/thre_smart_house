@@ -1,0 +1,21 @@
+.cont{
+  width: 79vw;
+  height: 87vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cont1{
+  width: 22vw;
+  height: 70vh;
+  background-color: #C0CDD9;
+  border-radius: 2%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  overflow: scroll;
+
+}
