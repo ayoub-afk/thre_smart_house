@@ -1,3 +1,5 @@
+import { Sensor } from './sensor';
+
 export interface ProfileUser {
   uid: string;
   email?: string;
@@ -7,4 +9,6 @@ export interface ProfileUser {
   phone?: string;
   address?: string;
   photoURL?: string;
+  house?:Sensor[];
+  ligthon?:boolean;
 }

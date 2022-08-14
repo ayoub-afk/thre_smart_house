@@ -52,6 +52,7 @@ export class ProfileComponent implements OnInit {
           this.usersService.updateUser({
             uid,
             photoURL,
+            house: []
           })
         )
       )

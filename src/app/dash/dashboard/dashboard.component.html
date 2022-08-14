@@ -47,5 +47,5 @@
       </button>
     </ng-container> -->
   </div>
-  <app-dash-main></app-dash-main>
+    <app-dash-main (houseChange)="onHouseChange()" [sensors] ="userData.house"></app-dash-main>
 </div>

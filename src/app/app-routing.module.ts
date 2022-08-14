@@ -17,8 +17,8 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { MainHomeComponent } from './main-home/main-home.component';
 import { ContactComponent } from './contact/contact.component';
 
-const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['login']);
-const redirectLoggedInToHome = () => redirectLoggedInTo(['']);
+/* const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['login']);
+const redirectLoggedInToHome = () => redirectLoggedInTo(['']); */
 
 const routes: Routes = [
   {path:'main-home',component:MainHomeComponent},
@@ -26,6 +26,7 @@ const routes: Routes = [
  */  {path:'pricing',component:PricingComponent},
   {path:'about',component:AboutComponent},
   {path:'contact',component:ContactComponent},
+  {path:'profile',component:ProfileComponent},
   {
     path: '',
     pathMatch: 'full',
@@ -34,18 +35,18 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
-    ...canActivate(redirectLoggedInToHome),
-   },
+/*     ...canActivate(redirectLoggedInToHome),
+ */   },
   {
     path: 'sign-up',
     component: SignUpComponent,
-    ...canActivate(redirectLoggedInToHome),
-   },
+/*     ...canActivate(redirectLoggedInToHome),
+ */   },
   {
     path: 'dashboard',
     component: DashboardComponent,
-     ...canActivate(redirectUnauthorizedToLogin),
-   },
+/*      ...canActivate(redirectUnauthorizedToLogin),
+ */   },
 ];
 
 @NgModule({

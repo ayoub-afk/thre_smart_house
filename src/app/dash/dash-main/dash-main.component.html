@@ -1,17 +1,14 @@
 <div class="cont">
   <div class="cont1">
-    <app-dash-card></app-dash-card>
-    <app-dash-card></app-dash-card>
-   <app-dash-card></app-dash-card>
-<app-dash-card></app-dash-card>
-<app-dash-card></app-dash-card>
+    <app-dash-card *ngFor="let sensor of sensors"  [sensorData]=sensor (change)= "cardChange()" ></app-dash-card>
+
   </div>
-  <div class="cont1">
+  <!-- <div class="cont1">
     <app-dash-card></app-dash-card>
 
   </div>
   <div class="cont1">
     <app-dash-card></app-dash-card>
 
-  </div>
+  </div> -->
 </div>

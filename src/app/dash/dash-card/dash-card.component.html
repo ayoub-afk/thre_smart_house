@@ -4,10 +4,12 @@
   </h4>
   <mat-card>
     <section class="example-section">
-      <mat-checkbox class="example-margin" [(ngModel)]="disabled">Disabled</mat-checkbox>
+      <mat-checkbox class="example-margin" [formControl]="checkBoxControl" [(ngModel)]="disabled">Disabled</mat-checkbox>
     </section>
     <section class="example-section">
       <mat-slide-toggle
+      [formControl]="sliderControl"
+      (change) = "onToggle()"
           class="example-margin"
           [color]="color"
           [checked]="checked"
